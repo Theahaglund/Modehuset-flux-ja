@@ -92,32 +92,7 @@ nav a:hover {
 
   /* icon med kungvagn slutar */
 
-  
-/* Stil för din banner */
-.banner {
-  background-image: url("bakgrundsbild.jpg"); /* Ange sökvägen till din bakgrundsbild */
-  background-size: cover; /* Anpassa bakgrundsbilden för att täcka hela området */
-  background-position: center; /* Centrera bakgrundsbilden */
-  text-align: center; /* Centrera innehållet horisontellt */
-  padding: 50px; /* Anpassa avståndet från kanten av banneren */
-}
 
-/* ... Din befintliga CSS-kod ... */
-
-/* Stil för din banner */
-.banner {
-  
- 
-  background-image: url("bakgrundsbild.jpg"); /* Ange sökvägen till din bakgrundsbild */
-    background-size: cover; /* Anpassa bakgrundsbilden för att täcka hela området */
-    background-position: center; /* Centrera bakgrundsbilden */
-    
-    text
-  text-align: center; /* Centrera innehållet horisontellt */
-    
-   
-  padding: 0px; /* Anpassa avståndet från kanten av banneren */
-  }
   
   /* Stil för din bannerbild */
   .banner img {
@@ -128,6 +103,15 @@ nav a:hover {
     max-width: 800px; /* Ange önskad maxbredd */
     margin: 0 auto; /* Centrera texten i mitten av sidan */
   }
+
+  nav {
+    list-style: none;
+    text-align: center; /* Centrera horisontellt */
+    display: flex;
+    margin-top: 20px; /* Add space at the top */
+    margin-bottom: 20px; /* Add space at the bottom */
+  }
+  
   section p {
     margin-bottom: 30px; /* Lägg till önskat avstånd (till exempel 20px) mellan varje <p>-element */
   }
