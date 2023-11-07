@@ -4,12 +4,6 @@
     padding: 0;
   }
   
-  ul {
-  
-  
-  
-  }
-  
   
   ul li {
   list-style: none;
@@ -37,15 +31,11 @@
     justify-content: space-between;
     align-items: center;
     padding: 300px 300px;
-    /* ... Din befintliga CSS-kod ... */
-
-
-
-
-
-/* ... Din befintliga CSS-kod fortsätter ... */
-
+    background-color: #cdc8bf;;
+    color: #fff;
+    padding: 10px;
   }
+
   
   .logo img {
     width: 100px; /* Anpassa storleken efter din logotyp */
@@ -67,6 +57,8 @@
     margin-bottom: 0cm; /* Flytta korgbilden 1 cm från höger sida */
   }
   /* navigeringen av menyn till slut */
+
+
   nav li {
     margin: 0 20px;
   }
@@ -81,10 +73,6 @@
     text-decoration: underline;
   }
   
-  /* Övrig styling för övriga element som rubriker, länkar, footer, osv. */
-  
-  
-  
   /* icon med kundvagn börjar */
   
   .cart-icon {
@@ -93,7 +81,6 @@
     right: 0;
     z-index: 1;
   }
-  
   
   .cart-icon a {
     text-decoration: none;
@@ -105,47 +92,54 @@
       margin-right: 1cm; /* Flytta korgbilden 1 cm från höger sida */
   
     }
+
+      /* Stil för din bannerbild */
+  .banner {
+    text-align: center; /* Centrera banner horisontellt */
+    margin: 0px 0; /* Lägg till önskat avstånd över och under bannerbilden */
+}
+
+.banner img {
+    max-width: 50%; /* Se till att bilden inte är bredare än förälderens bredd */
+}
   
     /* icon med kungvagn slutar */
-
-  
     .contact-form {
-      margin-bottom: 20px; /* Add a margin at the bottom of the contact form */
-      margin-top: 20px;
+      margin-top: 20px; /* Add margin at the top of the contact form */
+      margin-bottom: 20px; /* Add margin at the bottom of the contact form */
     }
-  
-  nav {
-      /* Your existing styles for the menu */
+    
+  .form-group {
+      margin: 30px 0;
   }
   
-  
-  
-  /* Footer längst ner på första sidan */
-  .footer-menu {
-      background-color: #000000; /* Ändra bakgrundsfärg efter dina önskemål */
-      color: #000000;
-      text-align: center; /* Centrera texten horisontellt */
-      padding: 10px 0;
+  label {
+      font-weight: bold;
   }
   
-  .footer-menu ul {
-      list-style: none;
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"] {
+      width: 90%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-top: 5px;
   }
   
-  .footer-menu li {
-      display: inline;
-      margin: 0 15px;
+  input[type="submit"] {
+      background-color: #333;
+      color: #fff;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      margin-top: 30px;
   }
   
-  .footer-menu a {
-      text-decoration: none;
-      color: #000000;
-      font-size: 16px;
+  input[type="submit"]:hover {
+      background-color: #555;
   }
   
-  .footer-menu a:hover {
-      text-decoration: underline;
-  }
   nav ul {
     list-style: none;
     text-align: center; /* Centrera horisontellt */
@@ -154,26 +148,6 @@
     margin-right: 10cm; /* Flytta korgbilden 1 cm från höger sida */
     margin-bottom: 0cm; /* Flytta korgbilden 1 cm från höger sida */
   }
-    
-  body {
-    font-family: 'Times New Roman', Times, serif;
-    background-color: #ffffff;
-    margin: 0;
-    padding: 0;
-    background-image:url(Gold\ Black\ Crown\ x\ Crown\ Logo\ \(1\).png);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-header {
-    background-color: #cdc8bf;;
-    color: #fff;
-    padding: 10px;
-}
-
-nav {
-    /* Stilmall för menyn */
-}
 
 .content {
     max-width: 500px;
@@ -186,41 +160,65 @@ nav {
 h2 {
     text-align: center;
 }
+  /* Your existing CSS */
 
-.contact-form {
-    /* Stilmall för kontaktformuläret */
+  .rounded-text-container {
+    background-color: rgb(237, 233, 233); /* Byt ut "beige" mot önskad färgkod */
+    border-radius: 20px;     /* Rundade hörn */
+    padding: 20px;           /* Inre utfyllnad */
+    width: 800px;            /* Bredd (justera efter behov) */
+    margin: 40px auto;       /* Centrera horisontellt och lägg till 20px topp- och bottenmarginal */
+    text-align: center;      /* Centrera texten horisontellt */
+  }
+  /* Hela footer med bakgrundsfärg */
+footer {
+  background-color: #cdc8bf;
+  padding: 30px 30px; /* Lägg till marginal på sidorna */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.form-group {
-    margin: 30px 0;
+/* Logotyp i fotern */
+.footer-logo img {
+  width: 150px;
 }
 
-label {
-    font-weight: bold;
+/* Länkar i fotern */
+.footer-links ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="tel"] {
-    width: 90%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin-top: 5px;
+.footer-links ul li {
+  display: inline;
+  margin-right: 30px;
 }
 
-input[type="submit"] {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    margin-top: 30px;
+.footer-links a {
+  text-decoration: none;
+  color: #000000;
 }
 
-input[type="submit"]:hover {
-    background-color: #555;
+/* Sociala medier i fotern */
+.footer-social ul {
+  list-style: none;
+  display: flex;
 }
+
+.footer-social ul li {
+  margin-right: 20px;
+}
+
+.footer-social img {
+  width: 50px; /* Här kan du ange önskad bredd för ikonerna */
+}
+
+
+
+
 
 
 
