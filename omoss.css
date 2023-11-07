@@ -1,0 +1,74 @@
+/* Återställ standardmarginaler och padding för alla element */
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul {
+  
+  
+  
+  }
+  
+  
+  ul li {
+  list-style: none;
+  display: inline-block;
+  float: left;
+    
+  }
+  
+  ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif, sans-serif;
+  background-color: #cdc8bf;
+  }
+  
+  body {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    background-color: #ffffff;
+  }
+  
+  header {
+    background-color: #cdc8bf;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .logo img {
+    width: 100px; /* Anpassa storleken efter din logotyp */
+  }
+  
+  .nav-container {
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  /* navigeringen av menyn till mitten */
+  nav ul {
+    list-style: none;
+    text-align: center; /* Centrera horisontellt */
+    display: flex;
+    margin-top: 0cm; /* Flytta korgbilden nedåt med 1 cm */
+    margin-right: 10cm; /* Flytta korgbilden 1 cm från höger sida */
+    margin-bottom: 0cm; /* Flytta korgbilden 1 cm från höger sida */
+  }
+  /* navigeringen av menyn till slut */
+  nav li {
+    margin: 0 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }

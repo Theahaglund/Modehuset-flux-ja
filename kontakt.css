@@ -1,0 +1,227 @@
+/* Återställ standardmarginaler och padding för alla element */
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul {
+  
+  
+  
+  }
+  
+  
+  ul li {
+  list-style: none;
+  display: inline-block;
+  float: left;
+    
+  }
+  
+  ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif, sans-serif;
+  background-color: #cdc8bf;
+  }
+  
+  body {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    background-color: #ffffff;
+  }
+  
+  header {
+    background-color: #cdc8bf;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 300px 300px;
+    /* ... Din befintliga CSS-kod ... */
+
+
+
+
+
+/* ... Din befintliga CSS-kod fortsätter ... */
+
+  }
+  
+  .logo img {
+    width: 100px; /* Anpassa storleken efter din logotyp */
+  }
+  
+  .nav-container {
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  /* navigeringen av menyn till mitten */
+  nav ul {
+    list-style: none;
+    text-align: center; /* Centrera horisontellt */
+    display: flex;
+    margin-top: 0cm; /* Flytta korgbilden nedåt med 1 cm */
+    margin-right: 10cm; /* Flytta korgbilden 1 cm från höger sida */
+    margin-bottom: 0cm; /* Flytta korgbilden 1 cm från höger sida */
+  }
+  /* navigeringen av menyn till slut */
+  nav li {
+    margin: 0 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Övrig styling för övriga element som rubriker, länkar, footer, osv. */
+  
+  
+  
+  /* icon med kundvagn börjar */
+  
+  .cart-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+  }
+  
+  
+  .cart-icon a {
+    text-decoration: none;
+  }
+  
+  .cart-icon img {
+    width: 40px;
+      margin-top: 0.7cm; /* Flytta korgbilden nedåt med 1 cm */
+      margin-right: 1cm; /* Flytta korgbilden 1 cm från höger sida */
+  
+    }
+  
+    /* icon med kungvagn slutar */
+
+  
+    .contact-form {
+      margin-bottom: 20px; /* Add a margin at the bottom of the contact form */
+      margin-top: 20px;
+    }
+  
+  nav {
+      /* Your existing styles for the menu */
+  }
+  
+  
+  
+  /* Footer längst ner på första sidan */
+  .footer-menu {
+      background-color: #000000; /* Ändra bakgrundsfärg efter dina önskemål */
+      color: #000000;
+      text-align: center; /* Centrera texten horisontellt */
+      padding: 10px 0;
+  }
+  
+  .footer-menu ul {
+      list-style: none;
+  }
+  
+  .footer-menu li {
+      display: inline;
+      margin: 0 15px;
+  }
+  
+  .footer-menu a {
+      text-decoration: none;
+      color: #000000;
+      font-size: 16px;
+  }
+  
+  .footer-menu a:hover {
+      text-decoration: underline;
+  }
+  nav ul {
+    list-style: none;
+    text-align: center; /* Centrera horisontellt */
+    display: flex;
+    margin-top: 0cm; /* Flytta korgbilden nedåt med 1 cm */
+    margin-right: 10cm; /* Flytta korgbilden 1 cm från höger sida */
+    margin-bottom: 0cm; /* Flytta korgbilden 1 cm från höger sida */
+  }
+    
+  body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    background-image:url(Gold\ Black\ Crown\ x\ Crown\ Logo\ \(1\).png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header {
+    background-color: #cdc8bf;;
+    color: #fff;
+    padding: 10px;
+}
+
+nav {
+    /* Stilmall för menyn */
+}
+
+.content {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #cdc8bf;;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+}
+
+.contact-form {
+    /* Stilmall för kontaktformuläret */
+}
+
+.form-group {
+    margin: 30px 0;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
+
+
+
+  

@@ -1,0 +1,259 @@
+/* Återställ standardmarginaler och padding för alla element */
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul li {
+  list-style: none;
+  display: inline-block;
+  float: left;
+    
+  }
+  
+  ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif, sans-serif;
+  background-color: #cdc8bf;
+  }
+  
+  body {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    background-color: #ffffff;
+  }
+  
+  header {
+    background-color: #cdc8bf;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+  }
+
+  .header {
+    padding: 10px 0; /* Ta bort vänster och höger utfyllnad, och behåll bara topp- och bottenutfyllnad */
+  }
+
+  
+
+  
+  .logo img {
+    width: 100px; /* Anpassa storleken efter din logotyp */
+  }
+  
+  .nav-container {
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  /* navigeringen av menyn till mitten */
+  nav ul {
+    list-style: none;
+    text-align: center; /* Centrera horisontellt */
+    display: flex;
+    margin-top: 0cm; /* Flytta korgbilden nedåt med 1 cm */
+    margin-right: 10cm; /* Flytta korgbilden 1 cm från höger sida */
+    margin-bottom: 0cm; /* Flytta korgbilden 1 cm från höger sida */
+  }
+  /* navigeringen av menyn till slut */
+  nav li {
+    margin: 0 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Övrig styling för övriga element som rubriker, länkar, footer, osv. */
+  
+  
+  /* icon med kundvagn börjar */
+  
+  .cart-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+  }
+  
+  
+  .cart-icon a {
+    text-decoration: none;
+  }
+  
+  .cart-icon img {
+    width: 40px;
+      margin-top: 0.7cm; /* Flytta korgbilden nedåt med 1 cm */
+      margin-right: 1cm; /* Flytta korgbilden 1 cm från höger sida */
+  
+    }
+
+  /* Stil för din bannerbild */
+.banner {
+    text-align: center; /* Centrera banner horisontellt */
+    margin: 40px 0; /* Lägg till önskat avstånd över och under bannerbilden */
+}
+
+.banner img {
+    max-width: 100%; /* Se till att bilden inte är bredare än förälderens bredd */
+}
+
+section {
+    text-align: center; /* Centrera texten horisontellt */
+    max-width: 800px; /* Ange önskad maxbredd */
+    margin: 0 auto; /* Centrera texten i mitten av sidan */
+}
+
+section p {
+    margin-bottom: 30px; /* Lägg till önskat avstånd (till exempel 30px) mellan varje <p>-element */
+}
+
+
+    .designers {
+        display: flex;
+        justify-content: space-evenly; /* Placera bilderna jämnt mellanrum */
+        align-items: center; /* Centrera texten vertikalt */
+        margin: 30px; /* Lägg till marginal från sidan */
+        padding: 20px; /* Lägg till inre utfyllnad */
+    }
+    
+    .designer {
+        text-align: center;
+        flex: 1;
+        border: 1px solid #000000; /* Lägg till en grå kantlinje (#808080 är hex-koden för grå färg) */
+        border-radius: 10px; /* Runda hörnen */
+        padding: 20px; /* Lägg till lite utfyllnad */
+        margin: 10px;
+    }
+    
+    .designer img {
+        max-width: 200px; /* Ändra till önskad bredd, till exempel 200px */
+        height: auto; /* Låt höjden justeras automatiskt för att behålla proportionerna */
+        display: block; /* Ta bort den underliggande mellanrummet */
+        margin: 0 auto 10px; /* Lägg till ett mellanrum under bilden */
+    }
+    
+    .designer p {
+        font-size: 16px;
+        margin: 0;
+    }
+    
+    
+      /* Ändra typsnitt */
+section p {
+    font-family: 'Times New Roman', Times, serif, sans-serif; /* Ange önskat typsnitt och backup-typsnitt */
+  }
+  
+  /* Ändra textfärg */
+  section p {
+    color: #000000; /* Ange önskad färg i hexadecimal (t.ex. svart) */
+  }
+  
+  /* Ändra färg på h1 */
+  section h1 {
+    color: #292929; /* Ange önskad färg i hexadecimal (t.ex. röd) */
+  }
+  
+  /* Ändra typsnitt för h1 om det behövs */
+  section h1 {
+    font-family: "Helvetica", sans-serif; /* Ange önskat typsnitt för h1 */
+  }
+  
+  /* Återställ typsnittet och färgen för andra <p>-element */
+  section p {
+    font-family: 'Times New Roman', Times, serif, sans-serif; /* Återställ typsnittet för p-elementen */
+    color: #000000; /* Återställ färgen för p-elementen */
+  }
+  section {
+    text-align: center;
+    max-width: 80%;
+    margin-top: 15px; /* Här lägger du till önskat mellanrum över videon */
+    margin-bottom: 10px;
+    overflow: hidden;
+  }
+  .feature1 {
+    background-color: #ffffff;
+    border-radius: 50px;
+    padding: 20px; /* Öka paddingen om du vill ha mer utrymme runt texten */
+    text-align: center;
+    width: 90%; /* Ange önskad bredd, till exempel 80% av förälderens bredd */
+    box-shadow: 0 7px 7px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+  }
+
+  .rounded-text-container {
+    background-color: rgb(237, 233, 233); /* Byt ut "beige" mot önskad färgkod */
+    border-radius: 20px;     /* Rundade hörn */
+    padding: 20px;           /* Inre utfyllnad */
+    width: 800px;            /* Bredd (justera efter behov) */
+    margin: 40px auto;       /* Centrera horisontellt och lägg till 20px topp- och bottenmarginal */
+    text-align: center;      /* Centrera texten horisontellt */
+}
+
+  
+  
+
+    /* Hela footer med bakgrundsfärg */
+footer {
+    background-color: #cdc8bf;
+    padding: 30px 30px; /* Lägg till marginal på sidorna */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Logotyp i fotern */
+  .footer-logo img {
+    width: 150px;
+    margin-right: 20px;
+  }
+  
+  /* Länkar i fotern */
+  .footer-links ul {
+    list-style: none;
+    margin: 0;
+    margin-left: 20px;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .footer-links ul li {
+    display: inline;
+    margin-right: 30px;
+  }
+
+  
+  .footer {
+    padding: 30px 0; /* Ta bort vänster och höger utfyllnad, och behåll bara topp- och bottenutfyllnad */
+  }
+  
+  .footer-links a {
+    text-decoration: none;
+    color: #000000;
+  }
+  
+  /* Sociala medier i fotern */
+  .footer-social ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  .footer-social ul li {
+    margin-right: 20px;
+  }
+  
+  .footer-social img {
+    width: 50px; /* Här kan du ange önskad bredd för ikonerna */
+  }
+
+
+  

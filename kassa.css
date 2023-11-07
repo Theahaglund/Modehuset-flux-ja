@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.cart, .products {
+    width: 45%;
+    float: left;
+    padding: 20px;
+}
+
+.cart {
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.cart-items, .product-list {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.add-to-cart, .remove-item {
+    cursor: pointer;
+    color: blue;
+}
+
+.add-to-cart:hover, .remove-item:hover {
+    text-decoration: underline;
+}

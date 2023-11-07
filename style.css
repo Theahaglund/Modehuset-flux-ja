@@ -1,0 +1,241 @@
+/* Återställ standardmarginaler och padding för alla element */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+list-style: none;
+display: inline-block;
+float: left;
+  
+}
+
+ul li a {
+text-decoration: none;
+font-size: 20px;
+font-family: 'Times New Roman', Times, serif, sans-serif;
+background-color: #cdc8bf;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif, sans-serif;
+  background-color: #ffffff;
+}
+
+header {
+  background-color: #cdc8bf;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+}
+
+.logo img {
+  width: 100px; /* Anpassa storleken efter din logotyp */
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  
+}
+
+/* navigeringen av menyn till mitten */
+nav ul {
+  list-style: none;
+  text-align: center; /* Centrera horisontellt */
+  display: flex;
+  margin-top: 0cm; /* Flytta korgbilden nedåt med 1 cm */
+  margin-right: 10cm; /* Flytta korgbilden 1 cm från höger sida */
+  margin-bottom: 0cm; /* Flytta korgbilden 1 cm från höger sida */
+}
+/* navigeringen av menyn till slut */
+nav li {
+  margin: 0 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 16px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Övrig styling för övriga element som rubriker, länkar, footer, osv. */
+
+
+/* icon med kundvagn börjar */
+
+.cart-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+
+.cart-icon a {
+  text-decoration: none;
+}
+
+.cart-icon img {
+  width: 40px;
+    margin-top: 0.7cm; /* Flytta korgbilden nedåt med 1 cm */
+    margin-right: 1cm; /* Flytta korgbilden 1 cm från höger sida */
+
+  }
+
+  /* icon med kungvagn slutar */
+
+  
+/* Stil för din banner */
+.banner {
+  background-image: url("bakgrundsbild.jpg"); /* Ange sökvägen till din bakgrundsbild */
+  background-size: cover; /* Anpassa bakgrundsbilden för att täcka hela området */
+  background-position: center; /* Centrera bakgrundsbilden */
+  text-align: center; /* Centrera innehållet horisontellt */
+  padding: 50px; /* Anpassa avståndet från kanten av banneren */
+}
+
+/* ... Din befintliga CSS-kod ... */
+
+/* Stil för din banner */
+.banner {
+  
+ 
+  background-image: url("bakgrundsbild.jpg"); /* Ange sökvägen till din bakgrundsbild */
+    background-size: cover; /* Anpassa bakgrundsbilden för att täcka hela området */
+    background-position: center; /* Centrera bakgrundsbilden */
+    
+    text
+  text-align: center; /* Centrera innehållet horisontellt */
+    
+   
+  padding: 0px; /* Anpassa avståndet från kanten av banneren */
+  }
+  
+  /* Stil för din bannerbild */
+  .banner img {
+    max-width: 100%; /* Se till att bilden inte är bredare än förälderens bredd */
+  }
+  section {
+    text-align: center; /* Centrera texten horisontellt */
+    max-width: 800px; /* Ange önskad maxbredd */
+    margin: 0 auto; /* Centrera texten i mitten av sidan */
+  }
+  section p {
+    margin-bottom: 30px; /* Lägg till önskat avstånd (till exempel 20px) mellan varje <p>-element */
+  }
+  /* Ändra typsnitt */
+section p {
+  font-family: 'Times New Roman', Times, serif, sans-serif; /* Ange önskat typsnitt och backup-typsnitt */
+}
+
+/* Ändra textfärg */
+section p {
+  color: #000000; /* Ange önskad färg i hexadecimal (t.ex. svart) */
+}
+
+/* Ändra färg på h1 */
+section h1 {
+  color: #292929; /* Ange önskad färg i hexadecimal (t.ex. röd) */
+}
+
+/* Ändra typsnitt för h1 om det behövs */
+section h1 {
+  font-family: "Helvetica", sans-serif; /* Ange önskat typsnitt för h1 */
+}
+
+/* Återställ typsnittet och färgen för andra <p>-element */
+section p {
+  font-family: 'Times New Roman', Times, serif, sans-serif; /* Återställ typsnittet för p-elementen */
+  color: #000000; /* Återställ färgen för p-elementen */
+}
+section {
+  text-align: center;
+  max-width: 80%;
+  margin-top: 15px; /* Här lägger du till önskat mellanrum över videon */
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.rounded-text-container {
+  background-color: rgb(237, 233, 233); /* Byt ut "beige" mot önskad färgkod */
+  border-radius: 20px;     /* Rundade hörn */
+  padding: 20px;           /* Inre utfyllnad */
+  width: 800px;            /* Bredd (justera efter behov) */
+  margin: 40px auto;       /* Centrera horisontellt och lägg till 20px topp- och bottenmarginal */
+  text-align: center;      /* Centrera texten horisontellt */
+}
+
+
+
+/* Återställ standardmarginaler och padding för alla element */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Stil för hela sidan */
+html, body {
+  height: 100%;
+}
+
+/* Stil för fotern */
+.footer {
+  background-color: #cdc8bf;
+  color: #000000;
+  padding: 20px 0;
+  width: 100%;
+  position: absolute;
+  bottom: 20;
+}
+
+/* Innehållet i fotern */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Logotyp i fotern */
+.footer-logo img {
+  width: 150px;
+}
+
+/* Länkar i fotern */
+.footer-links ul {
+  list-style: none;
+}
+
+.footer-links ul li {
+  display: inline;
+  margin-right: 15px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #000000;
+}
+
+/* Sociala medier i fotern */
+.footer-social ul {
+  list-style: none;
+  display: flex;
+}
+
+.footer-social ul li {
+  margin-right: 20px;
+}
+
+.footer-social img {
+  width: 50px;
+}
+
