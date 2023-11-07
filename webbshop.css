@@ -99,49 +99,49 @@ button {
   cursor: pointer;
 }
 
-/* Hela footer med bakgrundsfärg */
-footer {
-  background-color: #cdc8bf;
-  padding: 30px 30px; /* Lägg till marginal på sidorna */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-/* Logotyp i fotern */
-.footer-logo img {
-  width: 150px;
-}
-
-/* Länkar i fotern */
-.footer-links ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-
-.footer-links ul li {
-  display: inline;
-  margin-right: 30px;
-}
-
-.footer-links a {
-  text-decoration: none;
-  color: #000000;
-}
-
-/* Sociala medier i fotern */
-.footer-social ul {
-  list-style: none;
-  display: flex;
-}
-
-.footer-social ul li {
-  margin-right: 20px;
-}
-
-.footer-social img {
-  width: 50px; /* Här kan du ange önskad bredd för ikonerna */
-}
+  /* Hela footer med bakgrundsfärg */
+  footer {
+    background-color: #cdc8bf;
+    padding: 30px 30px; /* Lägg till marginal på sidorna */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Logotyp i fotern */
+  .footer-logo img {
+    width: 150px;
+  }
+  
+  /* Länkar i fotern */
+  .footer-links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .footer-links ul li {
+    display: inline;
+    margin-right: 30px;
+  }
+  
+  .footer-links a {
+    text-decoration: none;
+    color: #000000;
+  }
+  
+  /* Sociala medier i fotern */
+  .footer-social ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  .footer-social ul li {
+    margin-right: 20px;
+  }
+  
+  .footer-social img {
+    width: 50px; /* Här kan du ange önskad bredd för ikonerna */
+  }
 

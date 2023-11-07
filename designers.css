@@ -198,8 +198,8 @@ section p {
   
   
 
-    /* Hela footer med bakgrundsfärg */
-footer {
+  /* Hela footer med bakgrundsfärg */
+  footer {
     background-color: #cdc8bf;
     padding: 30px 30px; /* Lägg till marginal på sidorna */
     display: flex;
@@ -210,14 +210,12 @@ footer {
   /* Logotyp i fotern */
   .footer-logo img {
     width: 150px;
-    margin-right: 20px;
   }
   
   /* Länkar i fotern */
   .footer-links ul {
     list-style: none;
     margin: 0;
-    margin-left: 20px;
     padding: 0;
     text-align: center;
   }
@@ -225,11 +223,6 @@ footer {
   .footer-links ul li {
     display: inline;
     margin-right: 30px;
-  }
-
-  
-  .footer {
-    padding: 30px 0; /* Ta bort vänster och höger utfyllnad, och behåll bara topp- och bottenutfyllnad */
   }
   
   .footer-links a {
