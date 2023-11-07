@@ -129,7 +129,9 @@ button {
   .footer-links a {
     text-decoration: none;
     color: #000000;
-  }
+    font-size: 16px; /* Set your desired font size (e.g., 16px) */
+}
+
   
   /* Sociala medier i fotern */
   .footer-social ul {
