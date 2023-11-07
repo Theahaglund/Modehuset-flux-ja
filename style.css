@@ -170,23 +170,13 @@ html, body {
   height: 100%;
 }
 
-/* Stil för fotern */
-.footer {
+/* Hela footer med bakgrundsfärg */
+footer {
   background-color: #cdc8bf;
-  color: #000000;
-  padding: 20px 0;
-  width: 100%;
-  position: absolute;
-  bottom: 20;
-}
-
-/* Innehållet i fotern */
-.container {
+  padding: 30px 30px; /* Lägg till marginal på sidorna */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
 }
 
 /* Logotyp i fotern */
@@ -197,11 +187,14 @@ html, body {
 /* Länkar i fotern */
 .footer-links ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
 .footer-links ul li {
   display: inline;
-  margin-right: 15px;
+  margin-right: 30px;
 }
 
 .footer-links a {
@@ -220,6 +213,5 @@ html, body {
 }
 
 .footer-social img {
-  width: 50px;
+  width: 50px; /* Här kan du ange önskad bredd för ikonerna */
 }
-
