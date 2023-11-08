@@ -92,65 +92,95 @@
       margin-right: 1cm; /* Flytta korgbilden 1 cm från höger sida */
   
     }
-    <img src="detaljsida.png" {
-        width: 250px;
-        padding: 50px;
-        border: 25px solid;
-        }
+ /* Återställ standardmarginaler och padding för alla element */
+* {
+    margin: 0;
+    padding: 0;
+}
 
-    .rounded-text-container {
-        background-color: rgb(170, 117, 117); /* Byt ut "beige" mot önskad färgkod */
-        border-radius: 20px;     /* Rundade hörn */
-        padding: 20px;           /* Inre utfyllnad */
-        width: 500px;            /* Bredd (justera efter behov) */
-        margin: 40px auto;       /* Centrera horisontellt och lägg till 20px topp- och bottenmarginal */
-        text-align: center;      /* Centrera texten horisontellt */
-      }
- 
- /* Hela footer med bakgrundsfärg */
-  footer {
+ul li {
+    list-style: none;
+    display: inline-block;
+    float: left;
+}
+
+ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    background-color: #cdc8bf;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    background-color: #ffffff;
+}
+
+/* Övriga CSS-stilar för header, footer och andra element */
+
+.content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px; /* Justera marginaler efter behov */
+}
+
+.left-content, .right-content {
+    flex: 1;
+    text-align: center;
+    margin-top: 20px; /* Lägg till önskat avstånd till toppen */
+}
+
+.left-content img, .right-content img {
+    width: 100%; /* Båda bilderna kommer att vara lika stora */
+}
+
+
+/* Övriga CSS-stilar för .rounded-text-container, footer och andra element */
+
+/* Hela footer med bakgrundsfärg */
+footer {
     background-color: #cdc8bf;
     padding: 30px 30px; /* Lägg till marginal på sidorna */
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  
-  /* Logotyp i fotern */
-  .footer-logo img {
+}
+
+/* Logotyp i fotern */
+.footer-logo img {
     width: 150px;
-  }
-  
-  /* Länkar i fotern */
-  .footer-links ul {
+}
+
+/* Länkar i fotern */
+.footer-links ul {
     list-style: none;
     margin: 0;
     padding: 0;
     text-align: center;
-  }
-  
-  .footer-links ul li {
-    display: inline;
-    margin-right: 30px;
-  }
-  
-  .footer-links a {
-    text-decoration: none;
-    color: #000000;
-    font-size: 16px; /* Set your desired font size (e.g., 16px) */
 }
 
-  
-  /* Sociala medier i fotern */
-  .footer-social ul {
+.footer-links ul li {
+    display: inline;
+    margin-right: 30px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px; /* Ange önskad fontstorlek (t.ex. 16px) */
+}
+
+/* Sociala medier i fotern */
+.footer-social ul {
     list-style: none;
     display: flex;
-  }
-  
-  .footer-social ul li {
+}
+
+.footer-social ul li {
     margin-right: 20px;
-  }
-  
-  .footer-social img {
-    width: 50px; /* Här kan du ange önskad bredd för ikonerna */
-  }
+}
+
+.footer-social img {
+    width: 50px; /* Ange önskad bredd för ikonerna */
+}
