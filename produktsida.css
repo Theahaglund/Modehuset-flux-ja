@@ -1,0 +1,205 @@
+/* Återställ standardmarginaler och padding för alla element */
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul li {
+  list-style: none;
+  display: inline-block;
+  float: left;
+    
+  }
+  
+  ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif, sans-serif;
+  background-color: #cdc8bf;
+  }
+  
+  body {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    background-color: #ffffff;
+  }
+  
+  header {
+    background-color: #cdc8bf;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+  }
+  
+  .logo img {
+    width: 100px; /* Anpassa storleken efter din logotyp */
+  }
+  
+  .nav-container {
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  /* navigeringen av menyn till mitten */
+  nav ul {
+    list-style: none;
+    text-align: center; /* Centrera horisontellt */
+    display: flex;
+    margin-top: 0cm; /* Flytta korgbilden nedåt med 1 cm */
+    margin-right: 10cm; /* Flytta korgbilden 1 cm från höger sida */
+    margin-bottom: 0cm; /* Flytta korgbilden 1 cm från höger sida */
+  }
+  /* navigeringen av menyn till slut */
+  nav li {
+    margin: 0 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Övrig styling för övriga element som rubriker, länkar, footer, osv. */
+  
+  
+  /* icon med kundvagn börjar */
+  
+  .cart-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+  }
+  
+  
+  .cart-icon a {
+    text-decoration: none;
+  }
+  
+  .cart-icon img {
+    width: 40px;
+      margin-top: 0.7cm; /* Flytta korgbilden nedåt med 1 cm */
+      margin-right: 1cm; /* Flytta korgbilden 1 cm från höger sida */
+  
+    }
+  
+    /* icon med kungvagn slutar */
+
+/* Stilar för produktsidan */
+/* Stilar för produktsidan */
+.product-details {
+    display: flex;
+    justify-content: center; /* Centrera horisontellt */
+    align-items: center;
+    padding: 20px;
+}
+
+.product-image img {
+    max-width: 100%;
+    width: 500px; /* Ange önskad bredd för din bild */
+    height: auto;
+    display: block; /* Ta bort överbliven mellanrum under bilden */
+    margin: 0 auto; /* Centrera bilden horisontellt */
+}
+
+.product-info {
+    flex: 1;
+    padding: 0 20px;
+    text-align: center; /* Centrera texten horisontellt */
+}
+
+.container {
+    background-color: #c8b6b6; /* Bakgrundsfärg för container */
+    border-radius: 20px; /* Rundade kanter */
+    padding: 20px;
+    margin-left: 20px; /* Avstånd mellan bild och container */
+}
+
+.product-info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Lägg till mer avstånd mellan <p> -elementen */
+p {
+    margin-bottom: 20px; /* Ange önskat avstånd (till exempel 20px) mellan <p>-elementen nedåt */
+}
+
+/* Vänsterjustera text */
+p {
+    text-align: left;
+}
+/* Vänsterjustera rubriker */
+h1, h2, h3, h4, h5, h6 {
+    text-align: left;
+}
+
+
+ /* Hela footer med bakgrundsfärg */
+ footer {
+    background-color: #cdc8bf;
+    padding: 30px 30px; /* Lägg till marginal på sidorna */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Logotyp i fotern */
+  .footer-logo img {
+    width: 150px;
+  }
+  
+  /* Länkar i fotern */
+  .footer-links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .footer-links ul li {
+    display: inline;
+    margin-right: 30px;
+  }
+  
+  .footer-links a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px; /* Set your desired font size (e.g., 16px) */
+}
+
+  
+  /* Sociala medier i fotern */
+  .footer-social ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  .footer-social ul li {
+    margin-right: 20px;
+  }
+  
+  .footer-social img {
+    width: 50px; /* Här kan du ange önskad bredd för ikonerna */
+  }
+
+

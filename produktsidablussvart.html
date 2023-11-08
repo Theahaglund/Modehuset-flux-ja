@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produktsida</title>
+    <link rel="stylesheet" type="text/css" href="produktsida.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="logga.jpeg" alt="Kassan">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="webbshop.html">Webbshop</a></li>
+                <li><a href="omoss.html">Om oss</a></li>
+                <li><a href="designer.html">Designers</a></li>
+                <li><a href="detaljsida.html">Detaljsida</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+        <div class="cart-icon">
+            <a href="kassa.html">
+                <img src="kassa.jpeg" alt="Kassan">
+            </a>
+        </div>
+    </header>
+
+   <!-- ... tidigare HTML-kod ... -->
+
+<!-- Produktinformation -->
+<div class="product-details">
+    <div class="product-image">
+        <img src="svartblus.jpg" alt="Produkten">
+    </div>
+    <div class="product-info">
+        <h2>Långärmad tröja</h2>
+        <p><strong><h4>499kr</h4></strong></p>
+        <p>
+            Denna långärmade skjorta för kvinnor är en glamorös höjdpunkt perfekt för speciella tillfällen. Den har en elegant båtringning och subtila glittertrådar som ger din look det lilla extra. Oavsett om du ska på evenemang eller fest, kommer denna skjorta att ge dig en strålande och sofistikerad framtoning.
+            
+            <p><h4>Produktinformation:</h4></p>
+            <p>Material:83% viskos, 10% polyester, 7% polyamid</p>
+           
+            <p>Varumärke: Modehuset Flux</p>
+            
+            <p>Varunummer: A320678</p>
+    </div>
+    <div class="container">
+        <label for="quantity">Antal:</label>
+        <input type="number" id="quantity" name="quantity" value="1" min="1">
+        <button type="button" onclick="addToCart('Produktnamn', XX.XX)">Lägg till i varukorg</button>
+    </div>
+</div>
+
+
+<!-- ... fortsättning av din HTML-kod ... -->
+
+
+    <footer class="footer">
+        <div class="footer-logo">
+            <img src="logga.jpeg" alt="Webbshop-logotyp">
+        </div>
+        <div class="footer-links">
+            <ul>
+                <li><a href="omoss.html">Om oss</a></li>
+                <li><a href="kontakt.html">Kontakta oss</a></li>
+            </ul>
+        </div>
+        <div class="footer-social">
+            <ul>
+                <li><a href="#"><img src="facebook.jpeg" alt="Facebook"></a></li>
+                <li><a href="#"><img src="instagram.jpeg" alt="Instagram"></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

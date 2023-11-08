@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Webbshop</title>
     <link rel="stylesheet" type="text/css" href="webbshop.css">
-
     <script src="app.js"></script>
-
 </head>
 <body>
     <header>
@@ -36,176 +34,102 @@
   <!-- Banner -->
   <div class="banner">
     <img src="webbshop.png" alt="Bannerbild">
-</div>
-<!-- Textsektion -->
-    <div class="content">
-    </div>
+  </div>
 
     <main class="product-list">
         <table class="product-table">
             <tr>
                 <td class="product-cell">
                     <div class="product-item">
-                        <img src="beigetroja.jpg" alt="Produkt 1" class="product-img">
+                        <a href="Produktsidabeigetroja.html"> <!-- Länk till produktens sida -->
+                            <img src="beigetroja.jpg" alt="Produkt 1" class="product-img">
+                        </a>
                         <h2>Långärmad tröja</h2>
-                        <button onclick="addToCart('Produkt 1', 10)">Lägg till i varukorg</button>
-                        <form onsubmit="addReview('Produkt 1'); return false;">
-                            <div class="rating">
-                                <input type="radio" name="rating1" value="5" required><span class="star"></span>
-                                <input type="radio" name="rating1" value="4"><span class="star"></span>
-                                <input type="radio" name="rating1" value="3"><span class="star"></span>
-                                <input type="radio" name="rating1" value="2"><span class="star"></span>
-                                <input type="radio" name="rating1" value="1"><span class="star"></span>
-                            </div>
-                        </form>
-                        <ul id="reviewsProdukt1"></ul>
+                        <p>499kr</p>
+                        
                     </div>
                 </td>
                 <td class="product-cell">
                     <div class="product-item">
-                        <img src="bluslila.jpg" alt="Produkt 2" class="product-img">
+                        <a href="Produktsidalilablus.html"> <!-- Länk till produktens sida -->
+                            <img src="bluslila.jpg" alt="Produkt 2" class="product-img">
+                        </a>
                         <h2>Mönstrad blus</h2>
-                        <button onclick="addToCart('Produkt 1', 10)">Lägg till i varukorg</button>
-                        <form onsubmit="addReview('Produkt 1'); return false;">
-                            <div class="rating">
-                                <input type="radio" name="rating1" value="5" required><span class="star"></span>
-                                <input type="radio" name="rating1" value="4"><span class="star"></span>
-                                <input type="radio" name="rating1" value="3"><span class="star"></span>
-                                <input type="radio" name="rating1" value="2"><span class="star"></span>
-                                <input type="radio" name="rating1" value="1"><span class="star"></span>
-                            </div>
-                            
-                        </form>
-                        <ul id="reviewsProdukt1"></ul>
+                        <p>499kr</p>
+                      
                     </div>
                 </td>
                 <td class="product-cell">
                     <div class="product-item">
-                        <img src="grontop.jpg" alt="Produkt 3" class="product-img">
+                        <a href="produktsidatop.html"> <!-- Länk till produktens sida -->
+                            <img src="grontop.jpg" alt="Produkt 3" class="product-img">
+                        </a>
                         <h2>Top</h2>
-                        <button onclick="addToCart('Produkt 1', 10)">Lägg till i varukorg</button>
-                        <form onsubmit="addReview('Produkt 1'); return false;">
-                            <div class="rating">
-                                <input type="radio" name="rating1" value="5" required><span class="star"></span>
-                                <input type="radio" name="rating1" value="4"><span class="star"></span>
-                                <input type="radio" name="rating1" value="3"><span class="star"></span>
-                                <input type="radio" name="rating1" value="2"><span class="star"></span>
-                                <input type="radio" name="rating1" value="1"><span class="star"></span>
-                            </div>
-                            
-                        </form>
-                        <ul id="reviewsProdukt1"></ul>
+                        <p>499kr</p>
+                       
                     </div>
                 </td>
             </tr>
             <tr>
                 <td class="product-cell">
                     <div class="product-item">
-                        <img src="jackagron.jpg" alt="Produkt 4" class="product-img">
+                        <a href="produktsidagronjacka.html"> <!-- Länk till produktens sida -->
+                            <img src="jackagron.jpg" alt="Produkt 4" class="product-img">
+                        </a>
                         <h2>Dunjacka</h2>
-                        <button onclick="addToCart('Produkt 1', 10)">Lägg till i varukorg</button>
-                        <form onsubmit="addReview('Produkt 1'); return false;">
-                            <div class="rating">
-                                <input type="radio" name="rating1" value="5" required><span class="star"></span>
-                                <input type="radio" name="rating1" value="4"><span class="star"></span>
-                                <input type="radio" name="rating1" value="3"><span class="star"></span>
-                                <input type="radio" name="rating1" value="2"><span class="star"></span>
-                                <input type="radio" name="rating1" value="1"><span class="star"></span>
-                            </div>
-                            
-                        </form>
-                        <ul id="reviewsProdukt1"></ul>
+                        <p>499kr</p>
+                      
                     </div>
                 </td>
                 <td class="product-cell">
                     <div class="product-item">
-                        <img src="jackakavaj.jpg" alt="Produkt 5" class="product-img">
+                        <a href="produktsidakavaj.html"> <!-- Länk till produktens sida -->
+                            <img src="jackakavaj.jpg" alt="Produkt 5" class="product-img">
+                        </a>
                         <h2>Kavaj</h2>
-                        <button onclick="addToCart('Produkt 1', 10)">Lägg till i varukorg</button>
-                        <form onsubmit="addReview('Produkt 1'); return false;">
-                            <div class="rating">
-                                <input type="radio" name="rating1" value="5" required><span class="star"></span>
-                                <input type="radio" name="rating1" value="4"><span class="star"></span>
-                                <input type="radio" name="rating1" value="3"><span class="star"></span>
-                                <input type="radio" name="rating1" value="2"><span class="star"></span>
-                                <input type="radio" name="rating1" value="1"><span class="star"></span>
-                            </div>
-                            
-                        </form>
-                        <ul id="reviewsProdukt1"></ul>
+                        <p>499kr</p>
+                     
                     </div>
                 </td>
                 <td class="product-cell">
                     <div class="product-item">
-                        <img src="jeanssvart.jpg" alt="Produkt 6" class="product-img">
+                        <a href="produktsidajeanssvart.html"> <!-- Länk till produktens sida -->
+                            <img src="jeanssvart.jpg" alt="Produkt 6" class="product-img">
+                        </a>
                         <h2>Raka jeans</h2>
-                        <button onclick="addToCart('Produkt 1', 10)">Lägg till i varukorg</button>
-                        <form onsubmit="addReview('Produkt 1'); return false;">
-                            <div class="rating">
-                                <input type="radio" name="rating1" value="5" required><span class="star"></span>
-                                <input type="radio" name="rating1" value="4"><span class="star"></span>
-                                <input type="radio" name="rating1" value="3"><span class="star"></span>
-                                <input type="radio" name="rating1" value="2"><span class="star"></span>
-                                <input type="radio" name="rating1" value="1"><span class="star"></span>
-                            </div>
-                            
-                        </form>
-                        <ul id="reviewsProdukt1"></ul>
+                        <p>499kr</p>
+                       
                     </div>
                 </td>
             </tr>
             <tr>
                 <td class="product-cell">
                     <div class="product-item">
-                        <img src="marintshirt.jpg" alt="Produkt 7" class="product-img">
+                        <a href="produktsidamarintshirt.html"> <!-- Länk till produktens sida -->
+                            <img src="marintshirt.jpg" alt="Produkt 7" class="product-img">
+                        </a>
                         <h2>T-shirt</h2>
-                        <button onclick="addToCart('Produkt 1', 10)">Lägg till i varukorg</button>
-                        <form onsubmit="addReview('Produkt 1'); return false;">
-                            <div class="rating">
-                                <input type="radio" name="rating1" value="5" required><span class="star"></span>
-                                <input type="radio" name="rating1" value="4"><span class="star"></span>
-                                <input type="radio" name="rating1" value="3"><span class="star"></span>
-                                <input type="radio" name="rating1" value="2"><span class="star"></span>
-                                <input type="radio" name="rating1" value="1"><span class="star"></span>
-                            </div>
-                            
-                        </form>
-                        <ul id="reviewsProdukt1"></ul>
+                        <p>499kr</p>
+                        
                     </div>
                 </td>
                 <td class="product-cell">
                     <div class="product-item">
-                        <img src="polomarin.jpg" alt="Produkt 8" class="product-img">
+                        <a href="produktsidapolomarin.html"> <!-- Länk till produktens sida -->
+                            <img src="polomarin.jpg" alt="Produkt 8" class="product-img">
+                        </a>
                         <h2>Polotröja</h2>
-                        <button onclick="addToCart('Produkt 1', 10)">Lägg till i varukorg</button>
-                        <form onsubmit="addReview('Produkt 1'); return false;">
-                            <div class="rating">
-                                <input type="radio" name="rating1" value="5" required><span class="star"></span>
-                                <input type="radio" name="rating1" value="4"><span class="star"></span>
-                                <input type="radio" name="rating1" value="3"><span class="star"></span>
-                                <input type="radio" name="rating1" value="2"><span class="star"></span>
-                                <input type="radio" name="rating1" value="1"><span class="star"></span>
-                            </div>
-                            
-                        </form>
-                        <ul id="reviewsProdukt1"></ul>
+                        <p>499kr</p>
+                        
                     </div>
                 </td>
                 <td class="product-cell">
                     <div class="product-item">
-                        <img src="svartblus.jpg" alt="Produkt 9" class="product-img">
+                        <a href="produktsidablussvart.html"> <!-- Länk till produktens sida -->
+                            <img src="svartblus.jpg" alt="Produkt 9" class="product-img">
+                        </a>
                         <h2>Blus</h2>
-                        <button onclick="addToCart('Produkt 1', 10)">Lägg till i varukorg</button>
-                        <form onsubmit="addReview('Produkt 1'); return false;">
-                            <div class="rating">
-                                <input type="radio" name="rating1" value="5" required><span class="star"></span>
-                                <input type="radio" name="rating1" value="4"><span class="star"></span>
-                                <input type="radio" name="rating1" value="3"><span class="star"></span>
-                                <input type="radio" name="rating1" value="2"><span class="star"></span>
-                                <input type="radio" name="rating1" value="1"><span class="star"></span>
-                            </div>
-                            <ul id="reviewsProdukt1"></ul>
-                        </form>
+                        <p>499kr</p>
                         
                     </div>
                 </td>
