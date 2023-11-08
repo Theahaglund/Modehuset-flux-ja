@@ -49,7 +49,6 @@
     
   }
   
-  /* navigeringen av menyn till mitten */
   nav ul {
     list-style: none;
     text-align: center; /* Centrera horisontellt */
@@ -58,7 +57,6 @@
     margin-right: 0cm; /* Flytta korgbilden 1 cm från höger sida */
     margin-bottom: 0cm; /* Flytta korgbilden 1 cm från höger sida */
   }
-  /* navigeringen av menyn till slut */
   nav li {
     margin: 0 20px;
   }
@@ -77,3 +75,90 @@
     color: #000000;
     font-size: 16px; /* Set your desired font size (e.g., 16px) */
 }
+  /* navigeringen av menyn till mitten */
+
+    /* Stil för din bannerbild */
+    .banner img {
+      max-width: 100%; /* Se till att bilden inte är bredare än förälderens bredd */
+    }
+    section {
+      text-align: center; /* Centrera texten horisontellt */
+      max-width: 800px; /* Ange önskad maxbredd */
+      margin: 0 auto; /* Centrera texten i mitten av sidan */
+    }
+  
+    nav {
+      list-style: none;
+      text-align: center; /* Centrera horisontellt */
+      display: flex;
+      margin-top: 20px; /* Add space at the top */
+      margin-bottom: 20px; /* Add space at the bottom */
+    }
+
+  .rounded-text-container {
+    background-color: rgb(252, 237, 237); /* Byt ut "beige" mot önskad färgkod */
+    border-radius: 20px;     /* Rundade hörn */
+    padding: 20px;           /* Inre utfyllnad */
+    width: 600px;            /* Bredd (justera efter behov) */
+    margin: 40px auto;       /* Centrera horisontellt och lägg till 20px topp- och bottenmarginal */
+    text-align: center;      /* Centrera texten horisontellt */
+    border: 2px solid #000;  /* Lägg till en 2px tjock svart linje */
+  }
+
+
+
+
+
+
+
+
+
+
+ /* Hela footer med bakgrundsfärg */
+ footer {
+  background-color: #cdc8bf;
+  padding: 30px 30px; /* Lägg till marginal på sidorna */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logotyp i fotern */
+.footer-logo img {
+  width: 150px;
+}
+
+/* Länkar i fotern */
+.footer-links ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.footer-links ul li {
+  display: inline;
+  margin-right: 30px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 16px; /* Set your desired font size (e.g., 16px) */
+}
+
+
+/* Sociala medier i fotern */
+.footer-social ul {
+  list-style: none;
+  display: flex;
+}
+
+.footer-social ul li {
+  margin-right: 20px;
+}
+
+.footer-social img {
+  width: 50px; /* Här kan du ange önskad bredd för ikonerna */
+}
+

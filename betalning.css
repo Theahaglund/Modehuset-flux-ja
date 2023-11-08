@@ -1,8 +1,10 @@
+/* CSS i styles.css */
+
 /* Återställ standardmarginaler och padding för alla element */
 * {
     margin: 0;
     padding: 0;
-  }
+}
   
   
   ul li {
@@ -94,125 +96,90 @@
     }
 
       /* Stil för din bannerbild */
-  .banner {
-    text-align: center; /* Centrera banner horisontellt */
-    margin: 0px 0; /* Lägg till önskat avstånd över och under bannerbilden */
-}
-
-.banner img {
-    max-width: 50%; /* Se till att bilden inte är bredare än förälderens bredd */
-}
-  
-    /* icon med kungvagn slutar */
-    .contact-form {
-      margin-top: 20px; /* Add margin at the top of the contact form */
-      margin-bottom: 20px; /* Add margin at the bottom of the contact form */
-    }
-    
-  .form-group {
-      margin: 30px 0;
+  .banner img {
+    max-width: 100%; /* Se till att bilden inte är bredare än förälderens bredd */
   }
-  
-  label {
-      font-weight: bold;
-  }
-  
-  input[type="text"],
-  input[type="email"],
-  input[type="tel"] {
-      width: 90%;
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      margin-top: 5px;
-  }
-  
-  input[type="submit"] {
-      background-color: #333;
-      color: #fff;
-      border: none;
-      padding: 10px;
-      cursor: pointer;
-      margin-top: 30px;
-  }
-  
-  input[type="submit"]:hover {
-      background-color: #555;
+  section {
+    text-align: center; /* Centrera texten horisontellt */
+    max-width: 800px; /* Ange önskad maxbredd */
+    margin: 0 auto; /* Centrera texten i mitten av sidan */
   }
 
-  /* Lägg till detta i din CSS-fil */
-.popup {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  z-index: 1;
-}
-
-.popup-content {
-  background-color: #ffffff;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 75px;
-  border: 1px solid #ccc;
-}
-
-.close-popup {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 24px;
-  cursor: pointer;
-}
-h2 {
-  text-align: center;
-}
-.popup-content h2 {
-  margin-bottom: 10px; /* Justera detta värde efter dina önskemål */
-}
-
-p {
-  text-align: center;
-}
-
-  
-  nav ul {
+  nav {
     list-style: none;
     text-align: center; /* Centrera horisontellt */
     display: flex;
-    margin-top: 0cm; /* Flytta korgbilden nedåt med 1 cm */
-    margin-right: 10cm; /* Flytta korgbilden 1 cm från höger sida */
-    margin-bottom: 0cm; /* Flytta korgbilden 1 cm från höger sida */
+    margin-top: 20px; /* Add space at the top */
+    margin-bottom: 20px; /* Add space at the bottom */
   }
+/* Formulärstilar */
 
+/* Din befintliga CSS här */
+/* ... */
+
+/* Centrera formulären och ge dem en bredd */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.contact-form {
+    max-width: 400px;
+    margin: 70px;
+    background-color: #f2f2f2;
+    padding: 60px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* ... */
+
+
+/* Formulärfältstilar */
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 5px;
+    color: #333;
+}
+
+/* Skicka-knappstilar */
+input[type="submit"] {
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+input[type="submit"]:hover {
+    background-color: #005d99;
+}
+
+/* Lägg till en flex container runt huvudinnehållet */
 .content {
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #cdc8bf;;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
 }
 
-h2 {
-    text-align: center;
+/* Uppdatera reglerna för varje formulär */
+.contact-form {
+    flex: 1; /* Dela utrymme jämnt mellan formulären */
+    margin: 30px;
 }
-  /* Your existing CSS */
 
-  .rounded-text-container {
-    background-color: rgb(237, 233, 233); /* Byt ut "beige" mot önskad färgkod */
-    border-radius: 20px;     /* Rundade hörn */
-    padding: 20px;           /* Inre utfyllnad */
-    width: 800px;            /* Bredd (justera efter behov) */
-    margin: 40px auto;       /* Centrera horisontellt och lägg till 20px topp- och bottenmarginal */
-    text-align: center;      /* Centrera texten horisontellt */
-  }
-  /* Hela footer med bakgrundsfärg */
-  footer {
+
+  
+
+ /* Hela footer med bakgrundsfärg */
+ footer {
     background-color: #cdc8bf;
     padding: 30px 30px; /* Lägg till marginal på sidorna */
     display: flex;
@@ -258,11 +225,3 @@ h2 {
   .footer-social img {
     width: 50px; /* Här kan du ange önskad bredd för ikonerna */
   }
-
-
-
-
-
-
-
-  
