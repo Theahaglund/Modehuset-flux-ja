@@ -174,8 +174,38 @@ input[type="submit"]:hover {
     flex: 1; /* Dela utrymme jämnt mellan formulären */
     margin: 30px;
 }
-
-
+.button-link {
+    display: inline-block;
+    padding: 10px 10px; /* Anpassa storleken efter dina behov */
+    margin: 0; /* Ta bort marginalen runt knappen */
+    background-color: #000000; /* Bakgrundsfärg på knappen */
+    color: #fff; /* Textfärg */
+    text-decoration: none; /* Ta bort standardlänk-underline */
+    border: 1px solid #fcfcfc; /* Kantlinje på knappen */
+    border-radius: 5px; /* Avrunda kanterna */
+    transition: background-color 0.3s, color 0.3s; /* Smidig övergång vid hover */
+}
+  
+.button-link h2 {
+    margin: 2px; /* Ta bort marginal inom rubriken */
+}
+  
+.button-link:hover {
+    background-color: #b9cfe6; /* Bakgrundsfärg vid hover */
+    color: #fff; /* Textfärg vid hover */
+}
+.contact-form {
+    /* Ditt befintliga CSS för kontaktformuläret */
+  }
+  
+  .contact-form .form-group {
+    margin-bottom: 10px; /* Justera detta värde för önskad marginal mellan raderna i formuläret */
+  }
+  
+  .contact-form .button-link {
+    margin-top: 10px; /* Justera detta värde för önskad marginal mellan knappen och raderna i formuläret */
+  }
+  
   
 
  /* Hela footer med bakgrundsfärg */
