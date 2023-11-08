@@ -1,0 +1,156 @@
+/* Återställ standardmarginaler och padding för alla element */
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  ul li {
+  list-style: none;
+  display: inline-block;
+  float: left;
+    
+  }
+  
+  ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif, sans-serif;
+  background-color: #cdc8bf;
+  }
+  
+  body {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    background-color: #ffffff;
+  }
+  
+  header {
+    background-color: #cdc8bf;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 300px 300px;
+    background-color: #cdc8bf;;
+    color: #fff;
+    padding: 10px;
+  }
+
+  
+  .logo img {
+    width: 100px; /* Anpassa storleken efter din logotyp */
+  }
+  
+  .nav-container {
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  /* navigeringen av menyn till mitten */
+  nav ul {
+    list-style: none;
+    text-align: center; /* Centrera horisontellt */
+    display: flex;
+    margin-top: 0cm; /* Flytta korgbilden nedåt med 1 cm */
+    margin-right: 10cm; /* Flytta korgbilden 1 cm från höger sida */
+    margin-bottom: 0cm; /* Flytta korgbilden 1 cm från höger sida */
+  }
+  /* navigeringen av menyn till slut */
+
+
+  nav li {
+    margin: 0 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* icon med kundvagn börjar */
+  
+  .cart-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+  }
+  
+  .cart-icon a {
+    text-decoration: none;
+  }
+  
+  .cart-icon img {
+    width: 40px;
+      margin-top: 0.7cm; /* Flytta korgbilden nedåt med 1 cm */
+      margin-right: 1cm; /* Flytta korgbilden 1 cm från höger sida */
+  
+    }
+    <img src="detaljsida.png" {
+        width: 250px;
+        padding: 50px;
+        border: 25px solid;
+        }
+
+    .rounded-text-container {
+        background-color: rgb(170, 117, 117); /* Byt ut "beige" mot önskad färgkod */
+        border-radius: 20px;     /* Rundade hörn */
+        padding: 20px;           /* Inre utfyllnad */
+        width: 500px;            /* Bredd (justera efter behov) */
+        margin: 40px auto;       /* Centrera horisontellt och lägg till 20px topp- och bottenmarginal */
+        text-align: center;      /* Centrera texten horisontellt */
+      }
+ 
+ /* Hela footer med bakgrundsfärg */
+  footer {
+    background-color: #cdc8bf;
+    padding: 30px 30px; /* Lägg till marginal på sidorna */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Logotyp i fotern */
+  .footer-logo img {
+    width: 150px;
+  }
+  
+  /* Länkar i fotern */
+  .footer-links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .footer-links ul li {
+    display: inline;
+    margin-right: 30px;
+  }
+  
+  .footer-links a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px; /* Set your desired font size (e.g., 16px) */
+}
+
+  
+  /* Sociala medier i fotern */
+  .footer-social ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  .footer-social ul li {
+    margin-right: 20px;
+  }
+  
+  .footer-social img {
+    width: 50px; /* Här kan du ange önskad bredd för ikonerna */
+  }
