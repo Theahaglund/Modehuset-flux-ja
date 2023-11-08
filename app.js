@@ -36,3 +36,37 @@ function updateCart() {
     cartTotal.textContent = total;
 }
 
+function addReview(productName) {
+    const reviewInput = document.querySelector(`li:contains("${productName}") input`);
+    const reviewList = document.getElementById(`reviews${productName}`);
+    
+    const reviewText = reviewInput.value;
+    if (reviewText) {
+        const reviewItem = document.createElement('li');
+        reviewItem.textContent = reviewText;
+        reviewList.appendChild(reviewItem);
+        reviewInput.value = ''; // Rensa inputfältet
+    }
+}
+function addReview(productName, ratingName) {
+    const reviewInput = document.querySelector(`li:contains("${productName}") input[name=${ratingName}]:checked`);
+    const reviewList = document.getElementById(`reviews${productName}`);
+    
+    if (reviewInput) {
+        const ratingValue = reviewInput.value;
+        const reviewItem = document.createElement('li');
+        const ratingStars = document.createElement('span');
+        ratingStars.className = 'star-rating';
+        for (let i = 1; i <= ratingValue; i++) {
+            const star = document.createElement('span');
+            star.innerHTML = '★';
+            ratingStars.appendChild(star);
+        }
+        reviewItem.appendChild(ratingStars);
+        reviewList.appendChild(reviewItem);
+        reviewInput.checked = false; // Rensa valda stjärnor
+    }
+}
+
+}
+
