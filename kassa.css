@@ -32,7 +32,7 @@ a {
     }
     
     .banner img {
-        max-width: 50%; /* Se till att bilden inte är bredare än förälderens bredd */
+        max-width: 100%; /* Se till att bilden inte är bredare än förälderens bredd */
     }
 
 /* Övriga CSS-regler här... */
