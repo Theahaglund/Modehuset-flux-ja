@@ -149,12 +149,13 @@ section {
 }
 
 .rounded-text-container {
-  background-color: rgb(237, 233, 233); /* Byt ut "beige" mot önskad färgkod */
+  background-color: rgb(255, 255, 255); /* Byt ut "beige" mot önskad färgkod */
   border-radius: 20px;     /* Rundade hörn */
   padding: 20px;           /* Inre utfyllnad */
   width: 800px;            /* Bredd (justera efter behov) */
   margin: 40px auto;       /* Centrera horisontellt och lägg till 20px topp- och bottenmarginal */
   text-align: center;      /* Centrera texten horisontellt */
+  border: 2px solid #000;  /* Lägg till en 2px tjock svart linje */
 }
 
 /* Återställ standardmarginaler och padding för alla element */

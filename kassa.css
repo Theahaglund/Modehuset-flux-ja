@@ -9,12 +9,21 @@ header {
     padding: 20px 30px;
 }
 
-
 h1 {
     margin-top: 30px;
     margin-bottom: 50px;
     text-align: center; /* Centrera texten horisontellt */
 }
+
+/* Övriga CSS-regler här... */
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px; /* Lägg till önskat marginalavstånd nedåt */
+}
+
+/* Övriga CSS-regler här... */
+
 
 a {
     text-decoration: none;
@@ -23,20 +32,17 @@ a {
 
 /* Övriga CSS-regler här... */
 
+/* Stil för din bannerbild */
+.banner {
+    text-align: center; /* Centrera banner horisontellt */
+    margin: 0px 0; /* Lägg till önskat avstånd över och under bannerbilden */
+}
+
+.banner img {
+    max-width: 100%; /* Se till att bilden inte är bredare än förälderens bredd */
+}
 
 /* Övriga CSS-regler här... */
-      /* Stil för din bannerbild */
-      .banner {
-        text-align: center; /* Centrera banner horisontellt */
-        margin: 0px 0; /* Lägg till önskat avstånd över och under bannerbilden */
-    }
-    
-    .banner img {
-        max-width: 100%; /* Se till att bilden inte är bredare än förälderens bredd */
-    }
-
-/* Övriga CSS-regler här... */
-
 
 button {
     background-color: black;
@@ -111,4 +117,92 @@ li {
     flex: 0 0 calc(33.33% - 20px); /* Anpassa storleken här (33.33% ger 3 produkter bredvid varandra) */
     margin-right: 20px; /* Justera avståndet mellan produkterna här */
 }
+/* Använd CSS för att centrera produkterna */
+#products ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    justify-content: center; /* Centrera produkterna horisontellt */
+}
 
+#products li {
+    flex: 0 0 calc(33.33% - 20px); /* Anpassa storleken här (33.33% ger 3 produkter bredvid varandra) */
+    margin-right: 20px; /* Justera avståndet mellan produkterna här */
+}
+
+/* Övriga CSS-regler här... */
+
+.checkout-button {
+    position: absolute;
+    bottom: -230px;
+    right: 20px;
+    z-index: 2;
+}
+
+.checkout-button button {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.checkout-button button:hover {
+    background-color: #333;
+}
+
+
+/* Hela footer med bakgrundsfärg */
+footer {
+    background-color: #cdc8bf;
+    padding: 30px 30px; /* Lägg till marginal på sidorna */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px; /* Lägg till önskat marginalavstånd uppåt */
+}
+
+/* Logotyp i fotern */
+.footer-logo img {
+    width: 150px;
+}
+
+/* Länkar i fotern */
+.footer-links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.footer-links ul li {
+    display: inline;
+    margin-right: 30px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px; /* Ange önskad fontstorlek (t.ex. 16px) */
+}
+
+/* Sociala medier i fotern */
+.footer-social ul {
+    list-style: none;
+    display: flex;
+}
+
+.footer-social ul li {
+    margin-right: 20px;
+}
+
+.footer-social img {
+    width: 50px; /* Här kan du ange önskad bredd för ikonerna */
+}
+
+/* Övriga CSS-regler här... */
+
+  
