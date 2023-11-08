@@ -8,23 +8,60 @@
     <title>Min Webbplats</title>
 </head>
 <body>
-    <h1>Varukorg</h1>
+    <header class="header">
+        <h1>Varukorg</h1>
+        <a href="index.html">Tillbaka</a>
+    </header>
+<body>
+   
     
     <div id="products">
         <h2>Produkter</h2>
-        <href="webbshop.html">
         <ul>
             <li>
-                Produkt 1 - Pris: $10
-                <button onclick="addToCart('Produkt 1', 10)">Lägg till i varukorg</button>
-                <button onclick="removeFromCart('Produkt 1', 10)">Ta bort</button>
-
+                <img src="beigetroja.jpg" alt="Produkt 1" style="max-width: 50px; max-height: 100px;">
+                Tröja beige - Pris: 499kr
+                <button onclick="addToCart('Tröja beige', 499)">Lägg till</button>
             </li>
             <li>
-                Produkt 2 - Pris: $20
-             <button onclick="addToCart('Produkt 2', 20)">Lägg till i varukorg</button>
-             <button onclick="removeFromCart('Produkt 1', 10)">Ta bort</button>
-
+                <img src="svartblus.jpg" alt="Produkt 1" style="max-width: 50px; max-height: 100px;">
+                Blus svart - Pris: 399kr
+                <button onclick="addToCart('Blus svart', 399)">Lägg till</button>
+            </li>
+            <li>
+                <img src="jackagron.jpg" alt="Produkt 1" style="max-width: 50px; max-height: 100px;">
+                Dunjacka grön - Pris: 1699kr
+                <button onclick="addToCart('Dunjacka grön', 1699)">Lägg till</button>
+            </li>
+            <li>
+                <img src="jackakavaj.jpg" alt="Produkt 1" style="max-width: 50px; max-height: 100px;">
+                Kavaj - Pris: 499kr
+                <button onclick="addToCart('Kavaj', 499)">Lägg till</button>
+            </li>
+            <li>
+                <img src="jeanssvart.jpg" alt="Produkt 1" style="max-width: 50px; max-height: 100px;">
+                Raka jeans - Pris: 799kr
+                <button onclick="addToCart('Raka jeans', 799)">Lägg till</button>
+            </li>
+            <li>
+                <img src="bluslila.jpg" alt="Produkt 1" style="max-width: 50px; max-height: 100px;">
+                Mönstrad blus - Pris: 299kr
+                <button onclick="addToCart('Mönstrad blus', 299)">Lägg till</button>
+            </li>
+            <li>
+                <img src="marintshirt.jpg" alt="Produkt 1" style="max-width: 50px; max-height: 100px;">
+                T-shirt - Pris: 149kr
+                <button onclick="addToCart('T-shirt', 149)">Lägg till</button>
+            </li>
+            <li>
+                <img src="grontop.jpg" alt="Produkt 1" style="max-width: 50px; max-height: 100px;">
+                Top grön - Pris: 299kr
+                <button onclick="addToCart('Top grön', 299)">Lägg till</button>
+            </li>
+            <li>
+                <img src="polomarin.jpg" alt="Produkt 1" style="max-width: 50px; max-height: 100px;">
+                Polotröja - Pris: 399kr
+                <button onclick="addToCart('Polotröja', 399)">Lägg till</button>
             </li>
         </ul>
     </div>
@@ -32,35 +69,16 @@
     <div id="cart">
         <h2>Varukorg</h2>
         <ul id="cart-items">
+            <!-- Här lägger du till varukorgsobjekten med "Ta bort" knappar -->
+            <li>
+                <button onclick="removeFromCart('Produkt 1', 10)">Ta bort</button>
+            </li>
         </ul>
-        <p>Totalt: $<span id="cart-total">0</span></p>
+        <p>Totalt: SEK<span id="cart-total">0</span></p>
     </div>
-    
-    
-    <script>
-        const cart = [];
-        let total = 0;
-        
-        function addToCart(product, price) {
-            cart.push({ product, price });
-            total += price;
-            updateCart();
-        }
-        
-        function updateCart() {
-            const cartItems = document.getElementById("cart-items");
-            const cartTotal = document.getElementById("cart-total");
-            cartItems.innerHTML = "";
-            cart.forEach(item => {
-                const li = document.createElement("li");
-                li.textContent = `${item.product} - Pris: $${item.price}`;
-                cartItems.appendChild(li);
-            });
-            cartTotal.textContent = total;
-        }
-    </script>
 </body>
 </html>
+
 
 
 

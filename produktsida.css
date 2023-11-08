@@ -158,10 +158,10 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 1; /* Så att den hamnar över annat innehåll */
 }
 
-.star:hover,
-.star.active {
+.star:hover {
     color: gold; /* Ändra till önskad färg */
 }
+
 
 
 /* Hela footer med bakgrundsfärg */

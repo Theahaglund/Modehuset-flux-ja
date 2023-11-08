@@ -1,5 +1,50 @@
-body {
-    font-family: Arial, sans-serif;
+/* Övriga CSS-regler här... */
+
+header {
+    background-color: #cdc8bf;
+    color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+}
+
+
+h1 {
+    margin: 0;
+    text-align: center; /* Centrera texten horisontellt */
+}
+
+a {
+    text-decoration: none;
+    color: black; /* Ändra färgen på hemlänken till svart */
+}
+
+/* Övriga CSS-regler här... */
+
+h2 {
+   margin-top: 30px;
+   margin-bottom: 50px;
+}  
+
+/* Övriga CSS-regler här... */
+
+
+/* Övriga CSS-regler här... */
+
+
+button {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 20px; /* Anpassa rundningsgraden efter ditt behov */
+    padding: 3px 5px; /* Justera padding för att ändra storlek */
+    cursor: pointer;
+    font-size: 10px; /* Justera fontstorleken efter ditt behov */
+}
+
+button:hover {
+    background-color: #333; /* Färg vid hovringseffekt */
 }
 
 .cart, .products {
@@ -37,3 +82,28 @@ li {
 .add-to-cart:hover, .remove-item:hover {
     text-decoration: underline;
 }
+
+.product-image img {
+    max-width: 200px;
+    max-height: 300px;
+}
+
+/* Använd CSS för att ändra bildernas storlek */
+.product-image img {
+    max-width: 100px; /* Justera storleken efter ditt behov */
+    max-height: 100px; /* Justera storleken efter ditt behov */
+}
+
+/* Använd CSS för att placera produkterna bredvid varandra */
+#products ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+}
+
+#products li {
+    flex: 0 0 calc(33.33% - 20px); /* Anpassa storleken här (33.33% ger 3 produkter bredvid varandra) */
+    margin-right: 20px; /* Justera avståndet mellan produkterna här */
+}
+
