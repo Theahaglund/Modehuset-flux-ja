@@ -118,21 +118,34 @@ body {
 
 /* Övriga CSS-stilar för header, footer och andra element */
 
+/* Produktinformation */
 .content-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px; /* Justera marginaler efter behov */
+    margin: 20px;
 }
 
-.left-content, .right-content {
-    flex: 1;
+.product {
     text-align: center;
-    margin-top: 20px; /* Lägg till önskat avstånd till toppen */
 }
 
-.left-content img, .right-content img {
+.product img {
     width: 100%; /* Båda bilderna kommer att vara lika stora */
+}
+
+.product p {
+    text-align: center;
+}
+
+.rounded-text-container {
+    background-color: rgb(255, 255, 255); /* Byt ut "beige" mot önskad färgkod */
+    border-radius: 20px;     /* Rundade hörn */
+    padding: 20px;           /* Inre utfyllnad */
+    width: 800px;            /* Bredd (justera efter behov) */
+    margin: 40px auto;       /* Centrera horisontellt och lägg till 20px topp- och bottenmarginal */
+    text-align: center;      /* Centrera texten horisontellt */
+    border: 2px solid #000;  /* Lägg till en 2px tjock svart linje */
 }
 
 
