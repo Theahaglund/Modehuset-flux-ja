@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="kassa.css">
+    <script src="app.js"></script>
     <title>Min Webbplats</title>
 </head>
 <body>
@@ -16,10 +17,14 @@
             <li>
                 Produkt 1 - Pris: $10
                 <button onclick="addToCart('Produkt 1', 10)">Lägg till i varukorg</button>
+                <button onclick="removeFromCart('Produkt 1', 10)">Ta bort</button>
+
             </li>
             <li>
                 Produkt 2 - Pris: $20
-                <button onclick="addToCart('Produkt 2', 20)">Lägg till i varukorg</button>
+             <button onclick="addToCart('Produkt 2', 20)">Lägg till i varukorg</button>
+             <button onclick="removeFromCart('Produkt 1', 10)">Ta bort</button>
+
             </li>
         </ul>
     </div>
@@ -57,10 +62,6 @@
 </body>
 </html>
 
-
-    <script src="app.js"></script>
-</body>
-</html>
 
 
  

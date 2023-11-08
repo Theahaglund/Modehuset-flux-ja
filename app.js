@@ -5,12 +5,16 @@ function addToCart(productName, price) {
     cartItem.textContent = `${productName} - $${price}`;
     cartItems.appendChild(cartItem);
 }
-function removeFromCart(item) {
-    cartItems.removeChild(item);
+function removeFromCart(productName, price) {
+    const index = cart.findIndex(item => item.product === productName);
+
+    if (index !== -1) {
+        const removedItem = cart.splice(index, 1)[0];
+        total -= removedItem.price;
+        updateCart();
+    }
 }
-// Skapa en global varukorg
-const cart = [];
-let total = 0;
+
 
 // Funktion för att lägga till produkter i varukorgen
 function addToCart(productName, price) {
