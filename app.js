@@ -68,5 +68,31 @@ function addReview(productName, ratingName) {
     }
 }
 
-}
+// Hämta alla stjärnelement
+const stars = document.querySelectorAll(".star");
+
+// Hämta alla stjärnelement
+const stars = document.querySelectorAll(".star");
+
+// Lägg till en klickhändelse för varje stjärna
+stars.forEach((star) => {
+    star.addEventListener("click", (e) => {
+        const clickedStar = e.target;
+        const rating = clickedStar.getAttribute("data-rating");
+
+        // Ta bort klassen "active" från alla stjärnor
+        stars.forEach((star) => {
+            star.classList.remove("active");
+        });
+
+        // Lägg till klassen "active" till de stjärnor som är klickade
+        stars.forEach((star) => {
+            if (star.getAttribute("data-rating") <= rating) {
+                star.classList.add("active");
+            }
+        });
+    });
+});
+
+
 
