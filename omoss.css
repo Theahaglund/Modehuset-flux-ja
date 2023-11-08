@@ -55,7 +55,7 @@
     text-align: center; /* Centrera horisontellt */
     display: flex;
     margin-top: 0cm; /* Flytta korgbilden nedåt med 1 cm */
-    margin-right: 10cm; /* Flytta korgbilden 1 cm från höger sida */
+    margin-right: 0cm; /* Flytta korgbilden 1 cm från höger sida */
     margin-bottom: 0cm; /* Flytta korgbilden 1 cm från höger sida */
   }
   /* navigeringen av menyn till slut */
