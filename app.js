@@ -92,25 +92,6 @@ function updateCart() {
     cartTotal.textContent = total;
 }
 
-// Lägg till detta i din JavaScript-fil
-function openContactPopup() {
-    document.getElementById("contact-popup").style.display = "block";
-}
-
-function closeContactPopup() {
-    document.getElementById("contact-popup").style.display = "none";
-}
-<script>
-    document.getElementById("checkoutForm").addEventListener("submit", function(event) {
-        // Här kan du utföra någon behandling eller validering av formulärdata om det behövs
-
-        // Efter behandling kan du omdirigera användaren till "tack.html"
-        window.location.href = "tack.html";
-
-        // Förhindra formuläret från att faktiskt skicka data till "tack.html"
-        event.preventDefault();
-    });
-</script>
 
 
 
