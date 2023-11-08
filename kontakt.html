@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Webbshop</title>
     <link rel="stylesheet" type="text/css" href="kontakt.css">
+    <script src="app.js"></script>
 </head>
 <body>
     <header>
@@ -68,7 +69,22 @@
             <input type="text" id="helpType" name="helpType" required>
         </div>
 
-        <input type="submit" value="Kontakta">
+        <!-- Lägg till detta i din HTML-fil -->
+<div id="contact-popup" class="popup">
+    <div class="popup-content">
+        <span class="close-popup" onclick="closeContactPopup()">&times;</span>
+        <h2>Tack för du kontaktar oss!</h2>
+        <p>Vi svarar normal inom 1-2 vardagar.</p>
+        <p>Luta dig nu tillbaka och vänta så hör vi av oss.</p>
+        <form action="matchmaking.php" method="post" class="contact-form">
+            <!-- Dina formulärfält här -->
+        </form>
+    </div>
+</div>
+
+<button onclick="openContactPopup()">Kontakta</button>
+
+
     </form>
 </main>
 
