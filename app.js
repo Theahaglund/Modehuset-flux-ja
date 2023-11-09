@@ -92,14 +92,6 @@ function updateCart() {
     cartTotal.textContent = total;
 }
 
-// Lägg till detta i din JavaScript-fil
-function openContactPopup() {
-    document.getElementById("contact-popup").style.display = "block";
-}
-
-function closeContactPopup() {
-    document.getElementById("contact-popup").style.display = "none";
-}
 
 
 
