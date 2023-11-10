@@ -68,6 +68,20 @@ function addReview(productName, ratingName) {
     }
 }
 
+// ... din befintliga JS-kod ...
+
+// Lägg till dessa funktioner för att hantera popupen
+function openContactPopup() {
+    const popup = document.getElementById('contact-popup');
+    popup.style.display = 'block';
+}
+
+function closeContactPopup() {
+    const popup = document.getElementById('contact-popup');
+    popup.style.display = 'none';
+}
+
+// ... fortsättning av din JS-kod ...
 
 
 
