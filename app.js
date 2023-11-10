@@ -1,24 +1,19 @@
 let cart = [];
 let total = 0;
-
 const cartItems = document.getElementById('cart-items');
-
 function addToCart(productName, price) {
     cart.push({ product: productName, price: price });
     total += price;
     updateCart(); // Uppdatera varukorgen på kassa-sidan
 }
 
-
 // Uppdaterad JavaScript-kod för att hantera borttagningen
 function removeFromCart(button) {
     // Hitta den överordnade <li>-taggen för det aktuella varukorgsobjektet
     const listItem = button.closest('li');
-
     // Hämta produktens namn och pris från data-attribut
     const productName = listItem.dataset.productName;
     const price = parseInt(listItem.dataset.price);
-
     // Ta bort produkten från varukorgen
     const index = cart.findIndex(item => item.product === productName);
     if (index !== -1) {
@@ -27,7 +22,6 @@ function removeFromCart(button) {
         updateCart();
     }
 }
-
 
 
 function updateCart() {
@@ -41,7 +35,6 @@ function updateCart() {
     });
     cartTotal.textContent = total;
 }
-
 function addReviewText(productName) {
     const reviewInput = document.querySelector(`li:contains("${productName}") input`);
     const reviewList = document.getElementById(`reviews${productName}`);
@@ -54,7 +47,6 @@ function addReviewText(productName) {
         reviewInput.value = ''; // Rensa inputfältet
     }
 }
-
 function addReviewRating(productName, ratingName) {
     const reviewInput = document.querySelector(`li:contains("${productName}") input[name=${ratingName}]:checked`);
     const reviewList = document.getElementById(`reviews${productName}`);
@@ -75,22 +67,17 @@ function addReviewRating(productName, ratingName) {
     }
 }
 
-
 // ... din befintliga JS-kod ...
-
 // Lägg till dessa funktioner för att hantera popupen
 function openContactPopup() {
     const popup = document.getElementById('contact-popup');
     popup.style.display = 'block';
 }
-
 function closeContactPopup() {
     const popup = document.getElementById('contact-popup');
     popup.style.display = 'none';
 }
-
 // ... fortsättning av din JS-kod ...
-
 
 
 
