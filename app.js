@@ -1,13 +1,26 @@
+let cart = [];
+let total = 0;
+
 const cartItems = document.getElementById('cart-items');
 
 function addToCart(productName, price) {
-    const cartItem = document.createElement('li');
-    cartItem.textContent = `${productName} - $${price}`;
-    cartItems.appendChild(cartItem);
+    cart.push({ product: productName, price: price });
+    total += price;
+    updateCart(); // Uppdatera varukorgen på kassa-sidan
 }
-function removeFromCart(productName, price) {
-    const index = cart.findIndex(item => item.product === productName);
 
+
+// Uppdaterad JavaScript-kod för att hantera borttagningen
+function removeFromCart(button) {
+    // Hitta den överordnade <li>-taggen för det aktuella varukorgsobjektet
+    const listItem = button.closest('li');
+
+    // Hämta produktens namn och pris från data-attribut
+    const productName = listItem.dataset.productName;
+    const price = parseInt(listItem.dataset.price);
+
+    // Ta bort produkten från varukorgen
+    const index = cart.findIndex(item => item.product === productName);
     if (index !== -1) {
         const removedItem = cart.splice(index, 1)[0];
         total -= removedItem.price;
@@ -16,27 +29,20 @@ function removeFromCart(productName, price) {
 }
 
 
-// Funktion för att lägga till produkter i varukorgen
-function addToCart(productName, price) {
-    cart.push({ product: productName, price: price });
-    total += price;
-    updateCart(); // Uppdatera varukorgen på kassa-sidan
-}
 
-// Funktion för att uppdatera varukorgen på kassa-sidan
 function updateCart() {
     const cartItems = document.getElementById('cart-items');
     const cartTotal = document.getElementById('cart-total');
     cartItems.innerHTML = ''; // Rensa varukorgen
     cart.forEach(item => {
         const cartItem = document.createElement('li');
-        cartItem.textContent = `${item.product} - $${item.price}`;
+        cartItem.textContent = `${item.product} - KR${item.price}`;
         cartItems.appendChild(cartItem);
     });
     cartTotal.textContent = total;
 }
 
-function addReview(productName) {
+function addReviewText(productName) {
     const reviewInput = document.querySelector(`li:contains("${productName}") input`);
     const reviewList = document.getElementById(`reviews${productName}`);
     
@@ -48,7 +54,8 @@ function addReview(productName) {
         reviewInput.value = ''; // Rensa inputfältet
     }
 }
-function addReview(productName, ratingName) {
+
+function addReviewRating(productName, ratingName) {
     const reviewInput = document.querySelector(`li:contains("${productName}") input[name=${ratingName}]:checked`);
     const reviewList = document.getElementById(`reviews${productName}`);
     
@@ -67,6 +74,7 @@ function addReview(productName, ratingName) {
         reviewInput.checked = false; // Rensa valda stjärnor
     }
 }
+
 
 // ... din befintliga JS-kod ...
 

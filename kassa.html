@@ -70,16 +70,18 @@
         </ul>
     </div>
     
-    <div id="cart">
-        <h1>Varukorg</h1>
-        <ul id="cart-items">
-            <!-- Här lägger du till varukorgsobjekten med "Ta bort" knappar -->
-            <li>
-                <button onclick="removeFromCart('Produkt 1', 10)">Ta bort</button>
-            </li>
-        </ul>
-        <p>Totalt: SEK<span id="cart-total">0</span></p>
-    </div>
+ <!-- Uppdaterad HTML-kod för varukorgen -->
+<div id="cart">
+    <h1>Varukorg</h1>
+    <ul id="cart-items">
+        <!-- Här lägger du till varukorgsobjekten med "Ta bort" knappar -->
+        <!-- Använd ett data-attribut för att spara produktens namn -->
+            <button onclick="removeFromCart(this)">Ta bort</button>
+        </li>
+    </ul>
+    <p>Totalt: SEK<span id="cart-total">0</span></p>
+</div>
+
 
     <div class="checkout-button">
         <a href="betalning.html">
