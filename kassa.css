@@ -68,26 +68,6 @@ button:hover {
     border: 1px solid #ccc;
     margin-right: 10px;
 }
-/* Övriga CSS-regler här... */
-
-/* Uppdaterade regler för borttagningsknappen */
-.cart-items button {
-    background-color: red; /* Du kan anpassa färgen efter behov */
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 3px 5px;
-    cursor: pointer;
-    font-size: 10px;
-    margin-right: auto; /* Justera önskat avstånd mellan knapparna */
-    display: block;
-}
-
-.cart-items button:hover {
-    background-color: darkred; /* Färg vid hovringseffekt */
-}
-
-/* Övriga CSS-regler här... */
 
 
 h2 {
