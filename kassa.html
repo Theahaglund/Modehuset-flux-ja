@@ -25,7 +25,7 @@
             <li>
                 <img src="beigetroja.jpg" alt="Produkt 1" style="max-width: 50px; max-height: 100px;">
                 Tröja beige - Pris: 499kr
-                <button onclick="addToCart('Tröja beige', 499)">Lägg till</button>
+                <button onclick="addToCart('Tröja beige', 499)">Lägg till</button>                </li>
             </li>
             <li>
                 <img src="svartblus.jpg" alt="Produkt 1" style="max-width: 50px; max-height: 100px;">
@@ -74,11 +74,10 @@
 <div id="cart">
     <h1>Varukorg</h1>
     <ul id="cart-items">
-        <!-- Här lägger du till varukorgsobjekten med "Ta bort" knappar -->
-        <!-- Använd ett data-attribut för att spara produktens namn -->
-            <button onclick="removeFromCart(this)">Ta bort</button>
-        </li>
+        <button onclick="removeFromCart(this)">Ta bort</button>
     </ul>
+</div>
+    <div>
     <p>Totalt: SEK<span id="cart-total">0</span></p>
 </div>
 

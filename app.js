@@ -10,10 +10,11 @@ function addToCart(productName, price) {
 // Uppdaterad JavaScript-kod för att hantera borttagningen
 function removeFromCart(button) {
     // Hitta den överordnade <li>-taggen för det aktuella varukorgsobjektet
-    const listItem = button.closest('li');
-    // Hämta produktens namn och pris från data-attribut
-    const productName = listItem.dataset.productName;
-    const price = parseInt(listItem.dataset.price);
+    const listItem = button.parentElement;
+    // Hämta produktens namn och pris från textinnehållet
+    const itemText = listItem.textContent.trim().split(' - ');
+    const productName = itemText[0];
+    const price = parseInt(itemText[1].replace('KR', ''));
     // Ta bort produkten från varukorgen
     const index = cart.findIndex(item => item.product === productName);
     if (index !== -1) {
@@ -22,6 +23,33 @@ function removeFromCart(button) {
         updateCart();
     }
 }
+
+// Uppdatera den befintliga addToCart-funktionen
+function addToCart(productName, price) {
+    cart.push({ product: productName, price: price });
+    total += price;
+    updateCart(); // Uppdatera varukorgen på kassa-sidan
+}
+
+// Uppdaterad updateCart-funktion
+function updateCart() {
+    const cartItems = document.getElementById('cart-items');
+    const cartTotal = document.getElementById('cart-total');
+    cartItems.innerHTML = ''; // Rensa varukorgen
+    cart.forEach(item => {
+        const cartItem = document.createElement('li');
+        cartItem.textContent = `${item.product} - KR${item.price}`;
+        const removeButton = document.createElement('button');
+        removeButton.textContent = 'Ta bort';
+        removeButton.onclick = () => removeFromCart(removeButton);
+        cartItem.appendChild(removeButton);
+        cartItems.appendChild(cartItem);
+    });
+    cartTotal.textContent = total;
+}
+
+
+// ... Din övriga JS-kod ...
 
 
 function updateCart() {
